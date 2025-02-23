@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="11">
+    <file>analyze-1.png</file>
+    <file>backgound-1.png</file>
+  </qresource>
+</RCC>

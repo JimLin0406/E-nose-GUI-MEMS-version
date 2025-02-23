@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>538</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: #1b2043;
+}
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="charts_gridLayout">
+        <item row="0" column="0">
+         <widget class="QWidget" name="polar_chart" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>310</width>
+            <height>310</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>310</width>
+            <height>310</height>
+           </size>
+          </property>
+          <property name="sizeIncrement">
+           <size>
+            <width>310</width>
+            <height>310</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QWidget" name="pie_chart" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>550</width>
+            <height>310</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>550</width>
+            <height>310</height>
+           </size>
+          </property>
+          <property name="sizeIncrement">
+           <size>
+            <width>550</width>
+            <height>310</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="8,2">
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>6</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>6</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>15</number>
+          </property>
+          <item>
+           <widget class="QGroupBox" name="groupBox_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox {
+ 	border: 1px solid rgb(9, 177, 177);
+	color: rgb(9, 177, 177);
+	border-radius: 10px; 
+}</string>
+            </property>
+            <property name="title">
+             <string>Set Data</string>
+            </property>
+            <widget class="QPushButton" name="remove_data">
+             <property name="geometry">
+              <rect>
+               <x>173</x>
+               <y>100</y>
+               <width>151</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	color: rgb(0, 0, 0);
+	border-width: 1px;
+	border-radius: 10px;
+	padding: 5px;
+	background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #fff, stop: 1 #888
+        );
+}
+
+QPushButton:pressed {
+    background-color: rgb(5, 112, 112);
+}
+
+QPushButton:hover:!pressed{
+     background-color: rgb(85, 121, 124);
+ }
+</string>
+             </property>
+             <property name="text">
+              <string>Remove Data</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="import_data">
+             <property name="geometry">
+              <rect>
+               <x>13</x>
+               <y>100</y>
+               <width>151</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	color: rgb(0, 0, 0);
+	border-width: 1px;
+	border-radius: 10px;
+	padding: 5px;
+	background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #fff, stop: 1 #888
+        );
+}
+
+QPushButton:pressed {
+    background-color: rgb(5, 112, 112);
+}
+
+QPushButton:hover:!pressed{
+     background-color: rgb(85, 121, 124);
+ }
+</string>
+             </property>
+             <property name="text">
+              <string>Import Data</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="data_name">
+             <property name="geometry">
+              <rect>
+               <x>13</x>
+               <y>40</y>
+               <width>311</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: 1px solid rgb(9, 177, 177);
+color: rgb(9, 177, 177);
+border-radius: 10px; 
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox {
+ 	border: 1px solid rgb(9, 177, 177);
+	color: rgb(9, 177, 177);
+	border-radius: 10px; 
+}</string>
+            </property>
+            <property name="title">
+             <string>Set Analysis Model</string>
+            </property>
+            <widget class="QLabel" name="model_name">
+             <property name="geometry">
+              <rect>
+               <x>13</x>
+               <y>40</y>
+               <width>311</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: 1px solid rgb(9, 177, 177);
+color: rgb(9, 177, 177);
+border-radius: 10px; 
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="import_model">
+             <property name="geometry">
+              <rect>
+               <x>13</x>
+               <y>100</y>
+               <width>151</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	color: rgb(0, 0, 0);
+	border-width: 1px;
+	border-radius: 10px;
+	padding: 5px;
+	background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #fff, stop: 1 #888
+        );
+}
+
+QPushButton:pressed {
+    background-color: rgb(5, 112, 112);
+}
+
+QPushButton:hover:!pressed{
+     background-color: rgb(85, 121, 124);
+ }
+</string>
+             </property>
+             <property name="text">
+              <string>Import Model</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="remove_model">
+             <property name="geometry">
+              <rect>
+               <x>174</x>
+               <y>100</y>
+               <width>151</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	color: rgb(0, 0, 0);
+	border-width: 1px;
+	border-radius: 10px;
+	padding: 5px;
+	background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #fff, stop: 1 #888
+        );
+}
+
+QPushButton:pressed {
+    background-color: rgb(5, 112, 112);
+}
+
+QPushButton:hover:!pressed{
+     background-color: rgb(85, 121, 124);
+ }
+</string>
+             </property>
+             <property name="text">
+              <string>Remove Model</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <property name="topMargin">
+           <number>10</number>
+          </property>
+          <property name="bottomMargin">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="start_analyze_ML">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>1</horstretch>
+              <verstretch>1</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(0, 0, 0);
+	border-width: 1px;
+	border-radius: 10px;
+	padding: 5px;
+	background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #fff, stop: 1 #888
+        );
+}
+
+QPushButton:pressed {
+    background-color: rgb(5, 112, 112);
+}
+
+QPushButton:hover:!pressed{
+     background-color: rgb(85, 121, 124);
+ }
+</string>
+            </property>
+            <property name="text">
+             <string>Start Analyze ML</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="start_analyze_DL">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>1</horstretch>
+              <verstretch>1</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(0, 0, 0);
+	border-width: 1px;
+	border-radius: 10px;
+	padding: 5px;
+	background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #fff, stop: 1 #888
+        );
+}
+
+QPushButton:pressed {
+    background-color: rgb(5, 112, 112);
+}
+
+QPushButton:hover:!pressed{
+     background-color: rgb(85, 121, 124);
+ }
+</string>
+            </property>
+            <property name="text">
+             <string>Start Analyze DL</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="reset">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>1</horstretch>
+              <verstretch>1</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	color: rgb(0, 0, 0);
+	border-width: 1px;
+	border-radius: 10px;
+	padding: 5px;
+	background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #fff, stop: 1 #888
+        );
+}
+
+QPushButton:pressed {
+    background-color: rgb(5, 112, 112);
+}
+
+QPushButton:hover:!pressed{
+     background-color: rgb(85, 121, 124);
+ }
+</string>
+            </property>
+            <property name="text">
+             <string>Reset</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
