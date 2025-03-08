@@ -13,3 +13,6 @@ This project develops an E-Nose sensor and GUI on the Jetson Nano.
   - Search Enose sensor and do the connection
     
     <img src="./media/setting_page.PNG" width="40%">
+
+- Enose Machine based on Jetson Nano
+  <img src="./media/enose.PNG" width="40%">
