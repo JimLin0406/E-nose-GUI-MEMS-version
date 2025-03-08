@@ -14,6 +14,6 @@ This project develops an E-Nose sensor and GUI on the Jetson Nano.
     
     <img src="./media/setting_page.PNG" width="40%">
 
-- Enose Machine based on Jetson Nano
+## Enose Machine based on Jetson Nano
   
   <img src="./media/enose.png" width="20%">
